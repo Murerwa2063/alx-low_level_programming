@@ -13,7 +13,9 @@
  *  print size of float
  *  print size of double
  *  print size of long double
+ *  Returns: 0 (success)
  */
+/*Returns: 0 (success), 1 (error)*/
 int main(void)
 {
 printf("char: %zu bytes\n", sizeof(char));
