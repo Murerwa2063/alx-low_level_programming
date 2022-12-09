@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdint.h>
-#include <limits.h>
 /**
  *  main - Entry point
  *  print size of char
@@ -15,8 +14,9 @@
  *  print size of double
  *  print size of long double
  */
-int main(void) 
-{printf("char: %zu bytes\n", sizeof(char));
+int main(void)
+{
+printf("char: %zu bytes\n", sizeof(char));
 printf("short: %zu bytes\n", sizeof(short));
 printf("int: %zu bytes\n", sizeof(int));
 printf("long: %zu bytes\n", sizeof(long));
@@ -28,5 +28,5 @@ printf("int64_t: %zu bytes\n", sizeof(int64_t));
 printf("float: %zu bytes\n", sizeof(float));
 printf("double: %zu bytes\n", sizeof(double));
 printf("long double: %zu bytes\n", sizeof(long double));
-return 0;
+return (0);
 }
