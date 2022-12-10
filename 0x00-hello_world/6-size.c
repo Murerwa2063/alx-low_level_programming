@@ -1,11 +1,17 @@
 #include <stdio.h>
+
 /**
- *  main - Entry point
+ * main - print the size of various types on the computer.
+ * The main starting point for the program.
  *
+ * Runs the program and returns an integer value upon exiting.
  *
- *  Returns: 0 (success)
+ * Return:
+ *  0 (success)
+ *  1 if an error occurred
  */
-int main(void) {
+int main(void)
+{
 	int i;
 	char ch;
 	float fl;
@@ -13,14 +19,13 @@ int main(void) {
 	long int li;
 	long long int lli;
 	/**
-	 * sizeof evaluates the size of various data types of the said computer
-	 * printf collects and prints the results of sizeof onto the console or monitor
+	 * sizeof evaluates the size of various data types
+	 * printf collects and prints the results of sizeof
 	 */
-	printf("Size of int: %zu bytes\n", sizeof(i));
-	printf("Size of char: %zu bytes\n", sizeof(ch));
-	printf("Size of float: %zu bytes\n", sizeof(fl));
-	printf("Size of double: %zu bytes\n", sizeof(db));
-	printf("Size of long int: %zu bytes\n", sizeof(li));
-	printf("Size of long long int: %zu bytes", sizeof(lli));
+	printf("Size of int: %zu byte(s)\n", sizeof(i));
+	printf("Size of char: %zu byte(s)\n", sizeof(ch));
+	printf("Size of float: %zu byte(s)\n", sizeof(fl));
+	printf("Size of long int: %zu byte(s)\n", sizeof(li));
+	printf("Size of long long int: %zu byte(s)", sizeof(lli));
 	return (0);
 }
