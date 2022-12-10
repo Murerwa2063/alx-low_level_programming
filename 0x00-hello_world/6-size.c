@@ -10,6 +10,7 @@
  *  0 (success)
  *  1 if an error occurred
  */
+
 int main(void)
 {
 	int i;
@@ -18,10 +19,7 @@ int main(void)
 	double db;
 	long int li;
 	long long int lli;
-	/**
-	 * sizeof evaluates the size of various data types
-	 * printf collects and prints the results of sizeof
-	 */
+
 	printf("Size of int: %zu byte(s)\n", sizeof(i));
 	printf("Size of char: %zu byte(s)\n", sizeof(ch));
 	printf("Size of float: %zu byte(s)\n", sizeof(fl));
