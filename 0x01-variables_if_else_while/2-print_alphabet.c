@@ -7,12 +7,12 @@
  * 0 (success)
  * non-zero if an error occurred
  */
-main(void)
+int main(void)
 
 {
-int ch;
-	for (ch = "a"; ch <= "z"; ch++)
-		putchar(ch);
-	putchar("\n")
+char c;
+	for (c = 'a'; c <= 'z'; c++)
+		putchar(c);
+	putchar('\n');;
 		return (0);
 }
