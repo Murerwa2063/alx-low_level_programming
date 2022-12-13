@@ -1,0 +1,17 @@
+#include <stdio.h>
+/**
+ * main - srarting point
+ * Return:
+ * 0 (success)
+ * non-zero if an errror occurred
+ */
+
+int main(void)
+{
+	char i = 'a';
+
+	for (; i <= 'z'; i--)
+		putchar(i);
+	putchar('\n');
+	return (0);
+}
