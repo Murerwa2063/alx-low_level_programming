@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <main.h>
 /**
  * main - Starting point
  * Return:
@@ -7,9 +8,9 @@
  */
 int main(void)
 {
-	char a = _putchar;
+	char a;
 
-	putchar(a);
-	putchar('\n');
+	_putchar(a);
+	_putchar('\n');
 	return (0);
 }
