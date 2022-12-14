@@ -1,15 +1,20 @@
-#include <main.h>
+#include "main.h"
 /**
- * main - Starting point
- * Return:
- * 0 (success)
- * 1 if an error occurred
+ * main - Entry point
+ *
+ * Return: Always 0
  */
 int main(void)
 {
-	char a;
-
-	_putchar(a);
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
 	_putchar('\n');
+
 	return (0);
 }
