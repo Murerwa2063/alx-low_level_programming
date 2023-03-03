@@ -23,13 +23,13 @@ char *rot13(char *s)
 	for (stringCount = 0; s[stringCount] != '\0'; stringCount++)
 		{
 		for (rotation = 0; rotation < 53; rotation++)
+		{
+			if (r1[rotation] == s[stringCount])
 			{
-				if (r1[rotation] == s[stringCount])
-					{
-						s[stringCount] = r2[rotation];
-						break;
-					}
+				s[stringCount] = r2[rotation];
+				break;
 			}
+		}
 		}
 	return (s);
 }
