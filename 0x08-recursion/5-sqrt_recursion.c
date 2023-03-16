@@ -1,6 +1,5 @@
 #include "main.h"
-/*This is the actual square root function to be called in the task's code*/
-int sqt_rec(int i, int n);
+int _sqt_rec(int i, int n);
 /**
  * _sqrt_recursion - returns the natural square root of a number.
  * @n: number to be checked.
@@ -13,24 +12,26 @@ int _sqrt_recursion(int n)
 	{
 		return (-1);
 	}
-	else
-	{
-		return (sqt_rec(n, 0));
-	}
+	return (_sqt_rec(n, 0));
+}
 /**
- * sqt_rec - finds the square root of an natural number.
- * @n: number to be checked for square root.
+ * _sqt_rec - calculates actual square root of n.
+ * @n: number to be considered.
  * @i: iterator.
- * Return: square root of n.
+ * Return: Square root of n.
  */
-int sqt_rec(int i, int n)
-	if (i * i > n)
-	{
-		return (-1);
-	}
+int _sqt_rec(int i, int n)
+{
 	if (i * i == n)
 	{
 		return (i);
 	}
-	return (sqt_rec(n, i + 1));
+	else if (i * i > n)
+	{
+		return (-1);
+	}
+	else
+	{
+		return (_sqt_rec(n, i + 1));
+	}
 }
