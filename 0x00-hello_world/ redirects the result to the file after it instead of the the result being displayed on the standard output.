@@ -1,2 +1,0 @@
-[main dd1d927]  Wrote a bash script that runs a C file through the preprocessor and saves the result into another file. The -E is used to stop the compilaton/creations of an obj file or an executable while the
- 1 file changed, 2 insertions(+)
